@@ -28,7 +28,7 @@ body{
     filter:brightness(0.72);
     transform:scale(1) rotate(0deg);
     transform-origin:center center;
-    animation:bgMotion 12s linear infinite, bgGlow 10s ease-in-out infinite alternate;
+    animation:bgMotion 25s linear infinite, bgGlow 10s ease-in-out infinite alternate;
     transition:filter .6s ease, background-position .6s ease, transform .6s ease;
     will-change:transform, background-position;
     z-index:-2;
@@ -143,7 +143,7 @@ body{
     color:#eff6ff;
     font-weight:600;
     border-bottom:1px solid rgba(224,215,255,.35);
-    transition:.65s ease;
+    transition:.25s ease;
 }
 
 .hero-link:hover{
