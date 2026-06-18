@@ -28,8 +28,8 @@ body{
     filter:brightness(0.72);
     transform:scale(1) rotate(0deg);
     transform-origin:center center;
-    animation:bgMotion 12s linear infinite, bgGlow 8s ease-in-out infinite alternate;
-    transition:filter .35s ease, background-position .35s ease;
+    animation:bgMotion 12s linear infinite, bgGlow 10s ease-in-out infinite alternate;
+    transition:filter .6s ease, background-position .6s ease, transform .6s ease;
     will-change:transform, background-position;
     z-index:-2;
     pointer-events:none;
@@ -38,23 +38,23 @@ body{
 @keyframes bgMotion {
     0% {
         transform:scale(1) rotate(0deg);
-        background-position: center top;
+        background-position: center 35%;
     }
     25% {
-        transform:scale(1.02) rotate(0deg);
-        background-position: right top;
+        transform:scale(1.01) rotate(0deg);
+        background-position: center 40%;
     }
     50% {
-        transform:scale(1.04) rotate(0deg);
-        background-position: right bottom;
+        transform:scale(1.02) rotate(0deg);
+        background-position: center 45%;
     }
     75% {
-        transform:scale(1.02) rotate(0deg);
-        background-position: left bottom;
+        transform:scale(1.01) rotate(0deg);
+        background-position: center 40%;
     }
     100% {
         transform:scale(1) rotate(0deg);
-        background-position: left top;
+        background-position: center 35%;
     }
 }
 
@@ -143,7 +143,7 @@ body{
     color:#eff6ff;
     font-weight:600;
     border-bottom:1px solid rgba(224,215,255,.35);
-    transition:.25s ease;
+    transition:.65s ease;
 }
 
 .hero-link:hover{
