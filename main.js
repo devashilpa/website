@@ -7,9 +7,9 @@ const heroBg = document.querySelector('.page-bg');
 let lastScroll = 0;
 
 function updateHeroBg() {
-    const offset = Math.min(lastScroll, 350);
-    const scale = 1 + offset / 1400;
-    const rotation = offset / 10;
+    const offset = Math.min(lastScroll, 450);
+    const scale = 1 + offset / 6800;
+    const rotation = offset / 35;
     if (heroBg) {
         heroBg.style.transform = `scale(${scale}) rotate(${rotation}deg)`;
     }
